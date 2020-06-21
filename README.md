@@ -1,6 +1,10 @@
 # flutter_firebase_auth
 
-A new Flutter project.
+A new Flutter project that will demonstrate how to use firebase authentication in flutter or how to connect flutter with firebase a little demo is give belo. 
+
+## Demo
+
+![](auth.gif)
 
 ## Getting Started
 
