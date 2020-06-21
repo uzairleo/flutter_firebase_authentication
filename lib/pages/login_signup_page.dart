@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/authentication.dart';
-import './forgot_password.dart';
+// import './forgot_password.dart';
 
 class LoginSignUpPage extends StatefulWidget {
   LoginSignUpPage({this.auth, this.onSignedIn});

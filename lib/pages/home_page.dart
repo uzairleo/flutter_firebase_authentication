@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/authentication.dart';
 import 'package:firebase_database/firebase_database.dart';
-import '../models/todo.dart';
+// import '../models/todo.dart';
 import 'dart:async';
 
 class HomePage extends StatefulWidget {
@@ -17,9 +17,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Todo> _todoList;
+  // List<Todo> _todoList;
 
-  final FirebaseDatabase _database = FirebaseDatabase.instance;
+  // final FirebaseDatabase _database = FirebaseDatabase.instance;
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   final TextEditingController _emailFilter = new TextEditingController();
@@ -65,12 +65,12 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  final _textEditingController = TextEditingController();
+  // final _textEditingController = TextEditingController();
 
   StreamSubscription<Event> _onTodoAddedSubscription;
   StreamSubscription<Event> _onTodoChangedSubscription;
 
-  Query _todoQuery;
+  // Query _todoQuery;
 
   bool _isEmailVerified = false;
 
@@ -318,22 +318,22 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _showEmailChangeErrorMessage() {
-    if (_errorMessage != null) {
-      return new Text(
-        _errorMessage,
-        style: TextStyle(
-            fontSize: 13.0,
-            color: Colors.red,
-            height: 1.0,
-            fontWeight: FontWeight.w300),
-      );
-    } else {
-      return new Container(
-        height: 0.0,
-      );
-    }
-  }
+  // Widget _showEmailChangeErrorMessage() {
+  //   if (_errorMessage != null) {
+  //     return new Text(
+  //       _errorMessage,
+  //       style: TextStyle(
+  //           fontSize: 13.0,
+  //           color: Colors.red,
+  //           height: 1.0,
+  //           fontWeight: FontWeight.w300),
+  //     );
+  //   } else {
+  //     return new Container(
+  //       height: 0.0,
+  //     );
+  //   }
+  // }
 
   _showChangeEmailContainer() {
     return Container(

@@ -27,8 +27,8 @@ class _RootPageState extends State<RootPage> {
     super.initState();
     widget.auth.getCurrentUser().then((user) {
       setState(() {
-        if (user != null) {
-          _userId = user?.uid;
+        if (user != null) {//null pointer checker 1=> x=y??z;  2=>x??=y;   3=> x?.foo()
+          _userId = user?.uid;//this will call the getter only if user is not null if null then it will not call it any more
         }
         authStatus =
             user?.uid == null ? AuthStatus.NOT_LOGGED_IN : AuthStatus.LOGGED_IN;
