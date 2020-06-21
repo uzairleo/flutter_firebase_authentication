@@ -186,8 +186,10 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
         padding: EdgeInsets.fromLTRB(0.0, 30.0, 0.0, 0.0),
         child: CircleAvatar(
           backgroundColor: Colors.transparent,
-          radius: 48.0,
-          child: Image.asset('assets/images/logo.png'),
+          radius:62.0,
+          child: Image.network("https://www.aushidhi.org/images/login-img.png",
+          )
+          // Image.asset('assets/images/logo.png'),
         ),
       ),
     );
@@ -195,7 +197,7 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
 
   Widget _showEmailInput() {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(0.0, 100.0, 0.0, 0.0),
+      padding: const EdgeInsets.fromLTRB(0.0, 80.0, 0.0, 0.0),
       child: new TextFormField(
         maxLines: 1,
         keyboardType: TextInputType.emailAddress,
